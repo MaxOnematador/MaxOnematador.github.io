@@ -1,0 +1,116 @@
+/* === RESETEO GENERAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* === ENCABEZADOS === */
+h1, h2, h3 {
+    color: cyan;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* === PÁRRAFOS Y LISTAS === */
+p {
+    margin-bottom: 10px;
+}
+ul {
+    margin: 10px 0 20px 40px;
+}
+li {
+    margin-bottom: 5px;
+}
+
+/* === BOTONES === */
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: cyan;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* === CONTENIDO OCULTO POR DEFECTO === */
+#contenido1,
+#contenido2,
+#contenido3,
+#contenido4 {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* === TABLAS === */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    color: black;
+}
+
+caption {
+    background-color: cyan;
+    color: black;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px 5px 0 0;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+thead {
+    background-color: black;
+    color: cyan;
+}
+
+/* === IMÁGENES === */
+img {
+    max-width: 80%;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid cyan;
+    border-radius: 8px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
